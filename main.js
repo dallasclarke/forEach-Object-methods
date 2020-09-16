@@ -16,6 +16,13 @@ const obj = {
     age: 21,
   },
 };
+
+const result1 = Object.entries(obj).forEach((key) => {
+  console.log(`${key[0]} is called ${key[1]['name']} and is ${key[1]['age']} years old.`)
+})
+
+
+
 // Use Object Methods
 //Create an albphabeticl list of every folder in the documents object (the keys are the folders)
 //Create a list of every file in the documents object. one list.
@@ -25,6 +32,9 @@ const documents = {
   miscellaneous: ['pic.jpg', 'passwords.pdf', 'docs.txt'],
   Clubhouse: ['paty.jpg', 'christmasRules.pdf', 'pool.txt'],
 };
+
+
+
 //Are the two books alike? Create a function and Use Object methods to find out. Change object values to test for non-alike objects
 const book1 = {
   title: 'My Book',
