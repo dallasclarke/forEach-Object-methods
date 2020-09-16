@@ -55,5 +55,18 @@ const book2 = {
 };
 
 function books(bookOne, bookTwo) {
-  
+  const keyOne = Object.keys(bookOne);
+  const keyTwo = Object.keys(bookTwo);
+
+  if (keyOne.length !== keyTwo.length) {
+    return false;
+  }
+
+  for (const key of keyOne) {
+    if (bookOne[key] !== bookTwo[key]) {
+      return false;
+    }
+  }
+  return true;
 }
+console.log(books(book1, book2))
