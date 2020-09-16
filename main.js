@@ -33,6 +33,13 @@ const documents = {
   Clubhouse: ['paty.jpg', 'christmasRules.pdf', 'pool.txt'],
 };
 
+const list = Object.entries(documents).sort();
+// list;
+list.forEach((entries) => {
+  const keys = entries[0];
+  const values = entries[1];
+    console.log([`${keys}: ${values}`])
+});
 
 
 //Are the two books alike? Create a function and Use Object methods to find out. Change object values to test for non-alike objects
@@ -46,3 +53,7 @@ const book2 = {
   author: 'John Doe',
   year: '2019',
 };
+
+function books(bookOne, bookTwo) {
+  
+}
